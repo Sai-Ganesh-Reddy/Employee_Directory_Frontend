@@ -1,0 +1,20 @@
+{
+  "name": "employee-directory-frontend",
+  "version": "1.0.0",
+  "description": "A responsive employee directory dashboard that allows you to **add, edit, delete, search, filter, and paginate** employee data using only HTML, CSS, and vanilla JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sai-Ganesh-Reddy/Employee_Directory_Frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sai-Ganesh-Reddy/Employee_Directory_Frontend/issues"
+  },
+  "homepage": "https://github.com/Sai-Ganesh-Reddy/Employee_Directory_Frontend#readme"
+}
