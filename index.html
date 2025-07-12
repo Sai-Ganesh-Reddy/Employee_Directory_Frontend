@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Directory</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header-bar">
+    <div class="header-left">
+      <h1>Employee Directory</h1>
+    </div>
+    <div class="header-center">
+      <input type="text" id="searchInput" placeholder="Search by name or email" />
+    </div>
+    <div class="header-right">
+      <button class="filter-btn">Filter</button>
+    </div>
+  </header>
+
+  <!-- Controls -->
+  <div class="controls">
+    <label for="sortBy">Sort:</label>
+    <select id="sortBy">
+      <option value="">--Select--</option>
+      <option value="firstName">First Name</option>
+      <option value="department">Department</option>
+    </select>
+
+    <label for="pageSize">Show:</label>
+    <select id="pageSize">
+      <option value="10">10</option>
+      <option value="25">25</option>
+      <option value="50">50</option>
+    </select>
+
+    <button class="add-btn" onclick="window.location.href='add-edit.html'">Add Employee</button>
+  </div>
+
+  <!-- Employee List -->
+  <div id="employeeList"></div>
+
+  <!-- Pagination -->
+  <div id="paginationControls"></div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Employee Directory App. All rights reserved.
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

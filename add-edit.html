@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Employee</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <form id="employeeForm">
+    <h2>Add Employee</h2>
+
+    <label>First name</label>
+    <input type="text" id="firstName" placeholder="First name" required />
+
+    <label>Last name</label>
+    <input type="text" id="lastName" placeholder="Last name" required />
+
+    <div class="input-row">
+      <div class="half">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Email" required />
+      </div>
+      <div class="half">
+        <label>Department</label>
+        <select id="department" required>
+          <option value="">Select department</option>
+          <option value="HR">HR</option>
+          <option value="Engineering">Engineering</option>
+          <option value="Design">Design</option>
+          <option value="Finance">Finance</option>
+        </select>
+      </div>
+    </div>
+
+    <label>Role</label>
+    <select id="role" required>
+      <option value="">Select role</option>
+      <option value="Manager">Manager</option>
+      <option value="Developer">Developer</option>
+      <option value="Designer">Designer</option>
+      <option value="Analyst">Analyst</option>
+    </select>
+
+    <div class="button-row">
+      <button type="button" class="cancel" onclick="window.location.href='index.html'">Cancel</button>
+      <button type="submit">Add</button>
+    </div>
+  </form>
+
+  <script src="js/data.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>
